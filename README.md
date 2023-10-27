@@ -1,21 +1,21 @@
 # MyShoeSite is an online shoe ordering  demo website that I developed as a college project. It allows users to browse and order shoes from a wide range of brands, styles.
 
-![Picture of a website](<../shoe-order/screenshot/sc.png>)
+![Picture of a website](<./shoe-order/screenshot/sc.png>)
 
 
 # Features
- User registration and authentication
- Browse shoes by category, brand.
- Detailed product information
- Order history and tracking
+ 1) User registration and authentication
+ 2) Browse shoes by category, brand.
+ 3) Detailed product information
+ 4) Order history and tracking
 
 
 
 # Technologies Used
- HTML, CSS, and JavaScript
- [Framework/Library] (Bootstrap)
- [Backend Technology] (PHP)
- [Database Technology] (MySQL)
+ 1) HTML, CSS, and JavaScript
+ 2) [Framework/Library] (Bootstrap)
+ 3) [Backend Technology] (PHP)
+ 4) [Database Technology] (MySQL)
 
 
 
