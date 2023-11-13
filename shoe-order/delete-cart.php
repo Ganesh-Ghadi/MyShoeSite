@@ -6,10 +6,10 @@
  //include('../config/constants.php');
 
 
-
+ //AND isset($_GET['image_name'])
  //echo "delete page";
  //check whether the id and image_name is set or not
- if(isset($_GET['id']) AND isset($_GET['image_name']))
+ if(isset($_GET['id']) )
  {
  
  //get the value and delete
@@ -19,7 +19,7 @@
  $image_name = $_GET['image_name'];
  
  //remove the physical image file if available
- if($image_name != "")
+ /*if($image_name != "")              //cause we r not saving images in a folder like category and shoes
  {
      //image is available so remove it
      $path = "../images/shoes/".$image_name;
@@ -46,7 +46,7 @@
  
  
  
- }
+ }*/
  
  
  //delete data shhoe  from database
@@ -60,12 +60,12 @@
  if($res==true)
  {
      //set success message and redirect
-     $_SESSION['delete-cart'] = "<div class='text-success'>Shoes deleted successfully</div>";
+     $_SESSION['delete-cart'] = "<div class='text-success'>Shoes removed successfully</div>";
      //redirect to manage shoes
      //header('location:'.SITEURL.'admin/manage-shoes.php');
      ?>
      <script>
-  //  window.location.href='cart.php';      //  redirect is not happening by php thus we used javascript
+    window.location.href='cart.php';      //  redirect is not happening by php thus we used javascript
    </script>
    <?php
  
@@ -73,12 +73,12 @@
  else
  {
      //set fail message and redirect 
-     $_SESSION['delete-cart'] = "<div class='text-danger'>Failed to delete shoes from database</div>";
+     $_SESSION['delete-cart'] = "<div class='text-danger'>Failed to remove shoes from database</div>";
      //redirect to manage shoes
    //  header('location:'.SITEURL.'admin/manage-shoes.php');
    ?>
    <script>
- // window.location.href='cart.php';      //  redirect is not happening by php thus we used javascript
+  window.location.href='cart.php';      //  redirect is not happening by php thus we used javascript
  </script>
  <?php
  

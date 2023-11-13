@@ -25,7 +25,7 @@ exit;
 
 
 
-<div class="container">
+<div class="container " >
     <div class="row">
         <div class="col-md-12"  style="margin-top:50px;   margin-bottom:20px;">
            <h3 class="text-center">Welcome <?php echo $_SESSION['username'] ?></h3>
@@ -123,7 +123,7 @@ if($count>0)
 
 
    <!-- this is where u wull get shoes details  -->
-   <div class="card mb-3 col-md-12" style="max-width: 540px;">
+   <div class="card mb-3 col-md-12" style=" max-width: 500px; max-height:500px;">
             <div class="row g-0">
                 <div class="col-md-4">
 
@@ -139,7 +139,7 @@ if($count>0)
                         {
                           // image available
                             ?>
-                              <img src="<?php echo SITEURL; ?>images/shoes/<?php echo $image_name; ?>" class="img-fluid rounded-start" style="height: 15rem;">
+                              <img src="<?php echo SITEURL; ?>images/shoes/<?php echo $image_name; ?>" class="img-fluid rounded-start" style="height:auto;">
                             <?php
 
 
@@ -163,7 +163,7 @@ if($count>0)
                   
                    
                     <a href="<?php echo SITEURL; ?>order.php?shoe_id=<?php echo $shoe_id; ?>" class="btn btn-primary">Buy Now</a>
-                    <a href="<?php echo SITEURL; ?>delete-cart.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn btn-danger">Delete Shoes</a>
+                    <a href="<?php echo SITEURL; ?>delete-cart.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn btn-danger">Remove</a>
                   
                    <h5>Quantity</h5>
                     <form action="" method="post" >           

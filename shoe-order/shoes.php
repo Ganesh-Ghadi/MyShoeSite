@@ -101,7 +101,22 @@
             <h5 class="card-title"><?php echo $title; ?></h5>
             <h4 class="card-title">₹<?php echo $price; ?></h4>
             <p class="card-text"><?php echo $description; ?></p>
-            <a href="<?php echo SITEURL; ?>order.php?shoe_id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a>
+            <div class="button-alignment" style="display:flex; justify-content:center; align-item:center;">
+            <a href="<?php echo SITEURL; ?>order.php?shoe_id=<?php echo $id; ?>" class="btn btn-primary" style="margin-right:5px;">Buy Now</a>
+            <!-- add to card form -->
+            <form action="" method="post">
+            <input type="hidden" name="title" value="<?php echo $title;  ?>">
+            <input type="hidden" name="price" value="<?php echo $price;  ?>">
+            <input type="hidden" name="description" value="<?php echo $description;  ?>">
+            <input type="hidden" name="id" value="<?php echo $id;  ?>">
+            <input type="hidden" name="image_name" value="<?php echo $image_name;  ?>">
+
+
+
+            <input type="submit" value="Add to cart" name="submit3" class="btn btn-success"style=""> 
+            </form>
+                      </div>
+            <!-- add to cart form complete -->
               </div>
            </div>
             </div>
@@ -131,7 +146,87 @@
 
           ?>
 
+<!-- add form details in database -->
+<?php
 
+//check whether submit button clicked or not
+if(isset($_POST['submit3']))
+{
+ //get all the details from the form
+  $title = $_POST['title'];
+  $price = $_POST['price'];
+  $description = $_POST['description'];
+  $shoe_id = $_POST['id'];
+  $image_name = $_POST['image_name'];
+  
+
+
+ // save the order in database
+ //create sql to save the data
+ $sql100 = "INSERT INTO tbl_cart SET
+       title = '$title',
+       description = '$description',
+       price = $price,
+       image_name = '$image_name',
+       shoe_id = $shoe_id
+       ";
+
+    //echo $sql2; die();
+
+   //execute the qurry
+   $res100 = mysqli_query($conn, $sql100);
+
+   //check whether query executed successfully or not
+   if($res100==true)
+   {
+     // query executed and order saved
+     $_SESSION['cart'] =  ' <div class="alert alert-success alert-dismissible fade show" role="alert">
+     <strong>Success!</strong> shoes added in cart
+     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+   </div> 
+   ';
+   ?>
+   <script>
+   window.location.href='index.php';      //  redirect is not happening by php thus we used javascript
+   </script>
+   <?php
+
+   }
+   else
+   {
+     //failed to save order
+     $_SESSION['cart'] = ' <div class="alert alert-danger alert-dismissible fade show" role="alert">
+     <strong>Failed!</strong> failed to add shoes in cart.
+     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+   </div> 
+   ';
+   ?>
+        <script>
+        window.location.href='index.php';      //  redirect is not happening by php thus we used javascript
+        </script>
+        <?php
+    
+
+   }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+?>
+
+
+
+              <!-- add form details in database complete -->
 
               
           </div>

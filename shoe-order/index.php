@@ -127,23 +127,71 @@ if($count2>0)
             <h5 class="card-title"><?php echo $title; ?></h5>
             <h4 class="card-title">₹<?php echo $price; ?></h4>
             <p class="card-text"><?php echo $description; ?></p>
-            <a href="<?php echo SITEURL; ?>order.php?shoe_id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a>
-            <!-- add to card form -->
-            <form action="" method="post">
-            <input type="hidden" name="title" value="<?php echo $title;  ?>">
-            <input type="hidden" name="price" value="<?php echo $price;  ?>">
-            <input type="hidden" name="description" value="<?php echo $description;  ?>">
-            <input type="hidden" name="id" value="<?php echo $id;  ?>">
-            <input type="hidden" name="image_name" value="<?php echo $image_name;  ?>">
+            <div class="button-alignment" style="display:flex; justify-content:center;  align-items: center;">
+            <a href="<?php echo SITEURL; ?>order.php?shoe_id=<?php echo $id; ?>" class="btn btn-primary" style="margin-right:5px;">Buy Now</a>
+                  <!-- add to card form -->
+                  <form action="" method="post">
+                  <input type="hidden" name="title" value="<?php echo $title;  ?>">
+                  <input type="hidden" name="price" value="<?php echo $price;  ?>">
+                  <input type="hidden" name="description" value="<?php echo $description;  ?>">
+                  <input type="hidden" name="id" value="<?php echo $id;  ?>">
+                  <input type="hidden" name="image_name" value="<?php echo $image_name;  ?>">
 
 
-
-          <!--  <input type="submit" value="Add to cart" name="submit" class="btn btn-success"style=" margin-bottom:50px;">  -->
+                      
+                  <input type="submit" value="Add to cart" name="submit" class="btn btn-success"style=""> 
+                      
             </form>
+            </div>
             <!-- add to cart form complete -->
 
-              <!-- add form details in database -->
-              <?php
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+           </div>
+            </div>
+
+                <!-- if you want to remove order process completltely then remove order page and remove the buy now button link -->
+                 
+
+                <?php
+
+
+                
+
+               }
+
+            }
+            else
+            {
+               //shoes not available
+               echo "<div class='text-danger'>Shoes not available</div>";
+            }
+
+
+
+
+
+
+          ?>
+
+
+
+
+ <!-- add form details in database -->
+ <?php
 
 //check whether submit button clicked or not
 if(isset($_POST['submit']))
@@ -158,14 +206,16 @@ if(isset($_POST['submit']))
 
 
  // save the order in database
- //create sql to save the data
- $sql100 = "INSERT INTO tbl_cart SET
+//  create sql to save the data
+/*$sql100 = "INSERT INTO tbl_cart SET
        title = '$title',
        description = '$description',
        price = $price,
        image_name = '$image_name',
        shoe_id = $shoe_id
-       ";
+       ";*/
+  
+       $sql100 = "INSERT INTO `tbl_cart`(`title`, `description`, `price`, `image_name`, `shoe_id`) VALUES ('$title','$description','$price','$image_name','$shoe_id')";
 
     //echo $sql2; die();
 
@@ -223,46 +273,6 @@ if(isset($_POST['submit']))
 
 
               <!-- add form details in database complete -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-              </div>
-           </div>
-            </div>
-
-                <!-- if you want to remove order process completltely then remove order page and remove the buy now button link -->
-                 
-
-                <?php
-
-
-                
-
-               }
-
-            }
-            else
-            {
-               //shoes not available
-               echo "<div class='text-danger'>Shoes not available</div>";
-            }
-
-
-
-
-
-
-          ?>
   
 </div>
 
@@ -351,7 +361,8 @@ if($count3>0)
             <h5 class="card-title"><?php echo $title; ?></h5>
             <h4 class="card-title">₹<?php echo $price; ?></h4>
             <p class="card-text"><?php echo $description; ?></p>
-            <a href="<?php echo SITEURL; ?>order.php?shoe_id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a>
+            <div class="button-alignment" style="display:flex; justify-content:center; align-item:center">
+            <a href="<?php echo SITEURL; ?>order.php?shoe_id=<?php echo $id; ?>" class="btn btn-primary" style="margin-right:5px;">Buy Now</a>
           
 
               <!-- add to card form -->
@@ -364,15 +375,67 @@ if($count3>0)
 
 
 
-            <!-- <input type="submit" value="Add to cart" name="submit" class="btn btn-success"style=" margin-bottom:50px;"> -->
+             <input type="submit" value="Add to cart" name="submit2" class="btn btn-success"style="">
             </form>
+                      </div>
             <!-- add to cart form complete -->
 
-              <!-- add form details in database -->
-              <?php
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+           </div>
+            </div>
+
+
+                 
+
+                <?php
+
+
+                
+
+               }
+
+            }
+            else
+            {
+               //shoes not available
+               echo "<div class='text-danger'>Shoes not available</div>";
+            }
+
+
+
+
+
+
+          ?>
+
+
+
+
+
+
+<!-- add form details in database -->
+<?php
 
 //check whether submit button clicked or not
-if(isset($_POST['submit']))
+if(isset($_POST['submit2']))
 {
  //get all the details from the form
   $title = $_POST['title'];
@@ -450,49 +513,6 @@ if(isset($_POST['submit']))
 
               <!-- add form details in database complete -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              </div>
-           </div>
-            </div>
-
-
-                 
-
-                <?php
-
-
-                
-
-               }
-
-            }
-            else
-            {
-               //shoes not available
-               echo "<div class='text-danger'>Shoes not available</div>";
-            }
-
-
-
-
-
-
-          ?>
   
 </div>
 
@@ -596,7 +616,8 @@ if($count4>0)
             <h5 class="card-title"><?php echo $title; ?></h5>
             <h4 class="card-title">₹<?php echo $price; ?></h4>
             <p class="card-text"><?php echo $description; ?></p>
-            <a href="<?php echo SITEURL; ?>order.php?shoe_id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a>
+            <div class="button-alignment" style="display:flex; justify-content:center; align-item:center;">
+            <a href="<?php echo SITEURL; ?>order.php?shoe_id=<?php echo $id; ?>" class="btn btn-primary" style="margin-right:5px;">Buy Now</a>
              <!-- add to card form -->
              <form action="" method="post">
             <input type="hidden" name="title" value="<?php echo $title;  ?>">
@@ -607,15 +628,48 @@ if($count4>0)
 
 
 
-           <!-- <input type="submit" value="Add to cart" name="submit" class="btn btn-success"style=" margin-bottom:50px;">   -->
+            <input type="submit" value="Add to cart" name="submit3" class="btn btn-success"style=""> 
             </form>
+                      </div>
             <!-- add to cart form complete -->
 
-              <!-- add form details in database -->
-              <?php
+             
+           
+              </div>
+           </div>
+            </div>
+
+
+                 
+
+                <?php
+
+
+                
+
+               }
+
+            }
+            else
+            {
+               //shoes not available
+               echo "<div class='text-danger'>Shoes not available</div>";
+            }
+
+
+
+
+
+
+          ?>
+
+    
+
+ <!-- add form details in database -->
+ <?php
 
 //check whether submit button clicked or not
-if(isset($_POST['submit']))
+if(isset($_POST['submit3']))
 {
  //get all the details from the form
   $title = $_POST['title'];
@@ -692,38 +746,6 @@ if(isset($_POST['submit']))
 
 
               <!-- add form details in database complete -->
-           
-              </div>
-           </div>
-            </div>
-
-
-                 
-
-                <?php
-
-
-                
-
-               }
-
-            }
-            else
-            {
-               //shoes not available
-               echo "<div class='text-danger'>Shoes not available</div>";
-            }
-
-
-
-
-
-
-          ?>
-
-    
-
-
 
 
   
