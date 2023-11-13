@@ -7,7 +7,7 @@
  
     // create constants  to store non repeating values
     // constants in captital letter and variables in small
-    define('SITEURL','http://localhost/shoe-order/' );                              // may be wrong my
+    define('SITEURL','http://localhost/Shoe_Order/shoe-order/' );                              // may be wrong my
     define('LOCALHOST', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD','');

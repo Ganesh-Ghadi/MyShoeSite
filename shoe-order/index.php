@@ -55,15 +55,15 @@ if(isset($_SESSION['cart']))
         
 
 
-  <div class="container">
-    <div class="row">
-        <div class="col-md-12"  style="margin-top:50px;   margin-bottom:20px;">
-           <h3 class="text-center">Welcome <?php echo $_SESSION['username'] ?></h3>
-            <h1 class="text-center">Shoes For Men</h1>
-        </div>
-    </div>
+      <div class="container">
+           <div class="row">
+              <div class="col-md-12"  style="margin-top:50px;   margin-bottom:20px;">
+                <h3 class="text-center">Welcome <?php echo $_SESSION['username'] ?></h3>
+                <h1 class="text-center">Shoes For Men</h1>
+              </div>
+           </div>
 
-    <div class="row justify-content-evenly">
+        <div class="row justify-content-evenly">
 
 
      
@@ -138,7 +138,7 @@ if($count2>0)
 
 
 
-           <!-- <input type="submit" value="Add to cart" name="submit" class="btn btn-success"style=" margin-bottom:50px;">-->
+          <!--  <input type="submit" value="Add to cart" name="submit" class="btn btn-success"style=" margin-bottom:50px;">  -->
             </form>
             <!-- add to cart form complete -->
 
