@@ -72,6 +72,7 @@
 <!-- table start -->
         <div class="row justify-content-evenly" >
             <div class="col-md-10" style="margin-top:20px; margin-bottom:30px;">
+            <div class="table-responsive">
             <table class="table caption-top table-striped table-hover">
 <thead>
     <tr>
@@ -206,6 +207,7 @@
 
 
       </table>
+    </div>
             </div>
         </div>
 

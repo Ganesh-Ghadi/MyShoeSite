@@ -25,9 +25,9 @@ exit;
 
 
 
-<div class="container " >
+<div class="container" >
     <div class="row">
-        <div class="col-md-12"  style="margin-top:50px;   margin-bottom:20px;">
+        <div class="col-md-12 justify-content-evenly"  style="margin-top:50px;   margin-bottom:20px;">
            <h3 class="text-center">Welcome <?php echo $_SESSION['username'] ?></h3>
             <h1 class="text-center">Shopping Cart  
             <!-- shopping cart symbol -->
@@ -41,8 +41,8 @@ exit;
           <!-- shopping cart symbol -->
         </div>
     </div>
-
-    <div class="row justify-content-evenly col-md-4"  style="margin-top:50px;   margin-bottom:50px;">
+      <!-- style="margin-top:50px;   margin-bottom:50px;"  -->
+    <div class="row justify-content-evenly" >
 
 
     <?php
@@ -123,9 +123,9 @@ if($count>0)
 
 
    <!-- this is where u wull get shoes details  -->
-   <div class="card mb-3 col-md-12" style=" max-width: 500px; max-height:500px;">
+   <div class="card mb-3" style=" max-width: 540px;">  <!--COL-LG-12-->
             <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-lg-4 align-self-center">
 
 
                 <?php
@@ -139,7 +139,7 @@ if($count>0)
                         {
                           // image available
                             ?>
-                              <img src="<?php echo SITEURL; ?>images/shoes/<?php echo $image_name; ?>" class="img-fluid rounded-start" style="height:auto;">
+                              <img src="<?php echo SITEURL; ?>images/shoes/<?php echo $image_name; ?>" class="img-fluid rounded-start" style="height:16rem; width:23rem;">
                             <?php
 
 
@@ -154,7 +154,7 @@ if($count>0)
 
                
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8">
                 <div class="card-body">
                     <h4 class="card-title"><?php echo $title;  ?></h4>
                    
@@ -173,7 +173,8 @@ if($count>0)
             </div>
         </div>
         </div>
-        </div>
+        
+                      
  <!-- it will end here -->
 
 

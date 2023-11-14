@@ -33,6 +33,13 @@ if(isset($_SESSION['update']))
   unset($_SESSION['update']);
 }
 
+if(isset($_SESSION['order']))
+{
+  echo $_SESSION['order'];
+  unset($_SESSION['order']);
+}
+
+
 ?>
 
 
@@ -45,7 +52,7 @@ if(isset($_SESSION['update']))
     <div class="container-fluid" style="background-color: #eeeff1;">
         <div class="row justify-content-evenly">
             <div class="col-10"  style="margin-top:20px;   margin-bottom:20px;">
-                <h1>Your order</h1>
+                <h1 class="text-center">Your order</h1>
             </div>
         </div>
 
@@ -55,9 +62,10 @@ if(isset($_SESSION['update']))
 
 <!-- table start -->
         <div class="row justify-content-evenly" >
-            <div class="col-md-10" style="margin-top:20px; margin-bottom:30px;">
+            <div class="col-lg-10" style="margin-top:20px; margin-bottom:30px;">
+            <div class="table-responsive">
             <table class="table caption-top table-striped table-hover">
-<thead>
+<thead class="table-danger">
     <tr>
       <th scope="col">S.N.</th>
       <th scope="col">Shoes</th>
@@ -158,6 +166,7 @@ if(isset($_SESSION['update']))
 
  
             </table>
+  </div>
             </div>
         </div>
 

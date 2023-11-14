@@ -100,7 +100,7 @@ else
     <h4 class="text-center">Selected Shoes</h4>
                 <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-lg-4 align-self-center">
 
 
                 <?php
@@ -114,7 +114,7 @@ else
                         {
                           // image available
                             ?>
-                              <img src="<?php echo SITEURL; ?>images/shoes/<?php echo $image_name; ?>" class="img-fluid rounded-start" style="height: 15rem;">
+                              <img src="<?php echo SITEURL; ?>images/shoes/<?php echo $image_name; ?>" class="img-fluid rounded-start" style="height: 16rem; width:23rem;">
                             <?php
 
 
@@ -129,7 +129,7 @@ else
 
                
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8">
                 <div class="card-body">
                     <h4 class="card-title"><?php echo $title;  ?></h4>
                    
@@ -280,7 +280,7 @@ else
       ';
         ?>
         <script>
-        window.location.href='index.php';      //  redirect is not happening by php thus we used javascript
+        window.location.href='order-front.php';      //  redirect is not happening by php thus we used javascript
         </script>
         <?php
 
@@ -295,7 +295,7 @@ else
       ';
         ?>
         <script>
-        window.location.href='index.php';      //  redirect is not happening by php thus we used javascript
+        window.location.href='order-front.php';      //  redirect is not happening by php thus we used javascript
         </script>
         <?php
 

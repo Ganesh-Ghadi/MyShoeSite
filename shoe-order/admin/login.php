@@ -13,15 +13,15 @@ body {background-color: powderblue   ! important;}
   </head>
   <body>
     <div class="container-fluid">
-        <div class="row justify-content-evenly">
-            <div class="col-md-3" style="margin-top:50px;">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-3 align-self-center" style="margin-top:50px;">
 
 
        
-            <div class="card" style="width:25rem;">
-  <img src="../images/pass.jpg" class="card-img-top"  alt="...">
+            <div class="card" style="width:auto;">
+  <img src="../images/pass.jpg" class="card-img-top img-fluid"  alt="...">
   <div class="card-body">
-    <h5 class="card-title">Login pass- admin admin</h5>
+    <h5 class="card-title">Login</h5>
     
       <?php
           if(isset($_SESSION['login']))
@@ -45,7 +45,7 @@ body {background-color: powderblue   ! important;}
     <!-- login form  -->
     <form action="" method="POST">
     <div class="mb-3 row">
-  <label class="col-sm-3 col-form-label">Username</label>
+  <label class="col-sm-4 col-form-label">Username</label>
     <div class="col-sm-6">
       <input type="text" name="username"  class="form-control" id="username">
     </div>
@@ -55,7 +55,7 @@ body {background-color: powderblue   ! important;}
 
 
   <div class="mb-3 row">
-    <label class="col-sm-3 col-form-label">Password</label>
+    <label class="col-sm-4 col-form-label">Password</label>
     <div class="col-sm-6">
       <input type="password" name="password" class="form-control" id="inputPassword">
     </div>

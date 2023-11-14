@@ -43,6 +43,7 @@ exit;
 
 
     <h1>About Us</h1>
+    <h1>This is a demo website</h1>
     <p>Welcome to MyShoeSite, the online marketplace where you can find all your favorite shoes at affordable prices.</p>
     <h2>Our Story</h2>
     <p>My vision is to make shopping easy and affordable for everyone. Today, we offer a wide range of Shoes, from Formal and athletics to casual and many more shoes.
@@ -57,7 +58,7 @@ Customers can browse through the shoes based on their preferred brand, size, col
     </p>
     
     <h2>Contact Us</h2>
-    <p>If you have any questions or concerns, please don't hesitate to contact us. You can reach us by phone at 7738751647 or by email at ghadiganesh2002@gmail.com</p>
+    <p>If you have any questions or concerns, please don't hesitate to contact us. You can reach us by phone at 9324597574 or by email at ganeshghadi084@gmail.com</p>
   
 
 

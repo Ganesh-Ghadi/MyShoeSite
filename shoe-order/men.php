@@ -32,7 +32,7 @@ exit;
     <div class="container">
         <div class="row justify-content-evenly">
             <div class="col-md-12"  style="margin-top:90px;   margin-bottom:20px;">
-                <h1>Categories For Men</h1>
+                <h1 class="text-center">Categories For Men</h1>
             </div>
         </div>
 
@@ -69,7 +69,7 @@ exit;
 
                       <div class="card mb-3" style="max-width: 540px; margin-top: 60px;">
                      <div class="row g-0">
-                     <div class="col-md-6">
+                     <div class="col-lg-4 align-self-center">
                       <?php
                       //check whether image is available or not
                         if($image_name=="")
@@ -81,7 +81,7 @@ exit;
                         {
                           // image available
                             ?>
-                              <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>" class="img-fluid rounded-start" style="height: 18rem;">
+                              <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>" class="img-fluid rounded-start" style="height: 17rem; width:23rem;">
                             <?php
 
 
@@ -91,7 +91,7 @@ exit;
                         
                          ?>
                      </div>
-                      <div class="col-md-6">        <!--changes needs for including anchoar tag-->
+                      <div class="col-lg-8 self-align-center">        <!--changes needs for including anchoar tag-->
                        <div class="card-body">
                       <h2 class="card-title"><?php echo $title; ?></h2>
                       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>

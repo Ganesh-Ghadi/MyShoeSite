@@ -96,9 +96,9 @@ if($count2>0)
                 ?>
 
 
-              <div class="col-md-3">
+              <div class="col-lg-3">
            <!-- card -->
-            <div class="card" style="width: 18rem; margin-bottom: 30px;">
+            <div class="card" style="width: auto; margin-bottom: 40px;">
                
             <?php
                       //check whether image is available or not
@@ -330,9 +330,9 @@ if($count3>0)
                 ?>
 
 
-              <div class="col-md-3">
+              <div class="col-lg-3">
            <!-- card -->
-            <div class="card" style="width: 18rem; margin-bottom: 30px;">
+            <div class="card" style="width: auto; margin-bottom: 40px;">
                
             <?php
                       //check whether image is available or not
@@ -585,9 +585,9 @@ if($count4>0)
                 ?>
 
 
-              <div class="col-md-3">
+              <div class="col-lg-3">
            <!-- card -->
-            <div class="card" style="width: 18rem; margin-bottom: 30px;">
+            <div class="card" style="width: auto; margin-bottom: 40px;">
                
             <?php
                       //check whether image is available or not
