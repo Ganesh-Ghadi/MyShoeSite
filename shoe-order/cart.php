@@ -25,9 +25,9 @@ exit;
 
 
 
-<div class="container" >
+<div class="container-fluid " id="bug">
     <div class="row">
-        <div class="col-md-12 justify-content-evenly"  style="margin-top:50px;   margin-bottom:20px;">
+        <div class="col-lg-12 justify-content-evenly"  style="margin-top:50px;   margin-bottom:20px;">
            <h3 class="text-center">Welcome <?php echo $_SESSION['username'] ?></h3>
             <h1 class="text-center">Shopping Cart  
             <!-- shopping cart symbol -->
@@ -171,7 +171,7 @@ if($count>0)
                     <input type="number" class="form-control" name="quantity" value="1" id="email">
             </div>
             </div>
-        </div>
+         </div> 
         </div>
         
                       
@@ -225,7 +225,7 @@ if($count>0)
 
 
 
-</div>
+    </div>
 
 
 

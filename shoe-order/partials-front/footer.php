@@ -2,7 +2,7 @@
 
  <div class="container-fluid">
            <div class="row">
-            <div class="col-12 text-white  " style="background-color: #ff3636; text-align: center">
+            <div class="col-12 text-white" style="background-color:#ff3636;  text-align: center">
                  <h6 class="f">2023 All rights reserved. Developed by Ganesh Ghadi  
             <a class="nav-link" href="<?php echo SITEURL; ?>Contact-us.php">About us</a>
             </li></h6>
