@@ -64,9 +64,22 @@
            <li class="nav-item">
               <a class="nav-link btn btn-success" href="<?php echo SITEURL; ?>logout.php">Log out</a>
             </li>
+
+             
+            <li class="nav-item">
+              <a class="nav-link btn btn-warning" style=" margin-left:10px;" href="<?php echo SITEURL; ?>/admin/index.php">Admin Login</a>
+            </li>
+
           </ul>
            <!-- logout end here -->
            
+           
+
+
+
+
+
+
            <!-- cart start here -->
             <a class="" href="<?php echo SITEURL; ?>cart.php"> <li class="nav-item btn">
               
